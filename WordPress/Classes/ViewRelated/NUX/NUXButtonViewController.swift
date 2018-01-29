@@ -33,6 +33,10 @@ class NUXButtonViewController: UIViewController {
         secondaryButton?.isHidden = (secondaryButtonTitle ?? "").isEmpty
     }
 
+    override func loadView() {
+        super.loadView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+    }
 
     /// Public method to set the button titles.
     ///
